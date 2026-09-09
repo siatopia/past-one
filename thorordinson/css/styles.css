@@ -1,0 +1,156 @@
+@import url('http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { overflow-y: scroll; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  padding-bottom: 40px;
+  color: #353535;
+   /* http://subtlepatterns.com/squared-metal/ */
+}
+
+br { display: block; line-height: 1.6em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0;/* max-width: 100%; */}
+
+/** page structure **/
+#w {
+  display: block;
+  max-width: 1000px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+#w header {
+  display: block;
+  padding-top: 15px;
+}
+
+/** Glidejs styles **/
+.slider2 {
+	position: relative;
+	width: 100%;
+	height: 323px;
+	overflow: hidden;
+}
+	
+.slides {
+  height: 100%;
+  overflow: hidden;
+  /**	
+   * Prevent blinking issue
+   * Not tested. Experimental.
+   */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+
+   -webkit-transition: all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+   -moz-transition: all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+   -ms-transition: all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+   -o-transition: all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+   transition: all 1000ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+	
+.slide {
+  height: 100%;
+  float: left;
+  clear: none;
+}
+
+.slider2-arrows {}
+
+.slider2-arrow {
+  position: absolute;
+  display: block;
+  margin-bottom: -20px;
+  padding:5px;
+  font-family: 'Alegreya Sans', 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 3.0em;
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 8px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.slider2-arrow:hover {
+  background: #ddd;
+  color: #aaa;
+}
+.slider2-arrow--right { bottom: 50%; right: 32px; }
+.slider2-arrow--left { bottom: 50%; left: 10px; }
+
+
+.slider2-nav {
+  position: absolute;
+  bottom: 0px;
+}
+
+.slider2-nav__item {
+  width: 10px;
+  height: 10px;
+  float: left;
+  clear: none;
+  display: block;
+  margin: 5px 5px;
+  background: #fff;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.slider2-nav__item:hover { background: #bababa; }
+.slider2-nav__item--current, .slider-nav__item--current:hover { background: #999; }
+
+
+
+/** responsive styles **/
+@media screen and (max-width: 1050px) {
+  #w { padding: 0 15px; }
+  .slider2-arrow { font-size: 1.8em; padding: 15px; }
+} 
+
+@media screen and (max-width: 650px) {
+  h1 { font-size: 2.9em; }
+}
+
+@media screen and (max-width: 450px) {
+  h1 { font-size: 2.1em; }
+}

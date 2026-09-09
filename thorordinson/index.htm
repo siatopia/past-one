@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <meta charset="UTF-8">
+    <title>알라딘</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<head>
+  <meta name="author" content="Jake Rocheleau">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  
+
+ <link rel="stylesheet" type="text/css" media="all" href="css/../styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.glide.min.js"></script>
+  
+  
+   <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script> <!--css js잘있는지 확인할것-->
+  <link rel="stylesheet" href="js/html5shiv.min.js">
+  
+  
+    
+<meta name="author" content="Pete R.">
+	
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/immersive_slider_demo.html" />
+	
+	
+	
+  <script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
+  <link href='css/immersive-slider.css' rel='stylesheet' type='text/css'>
+
+ <script>
+     $(document).ready(function(){
+ $('.slider').bxSlider({ auto: true, pager: true,  slideWidth: 1000 });
+     });
+     
+      $(document).ready(function(){
+ $('.slider2').bxSlider({ auto: true, pager: true, autoControls: true,
+  stopAutoOnClick: true, slideWidth: 1000 });
+     });
+     
+      $(document).ready(function(){
+ $('.slider3').bxSlider({ auto: true, pager: true,  slideWidth: 6000});  
+     });
+    </script> 
+  
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += 1);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = 1);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script type="text/javascript">
+$(function(){
+  $('.slider').glide({
+    autoplay: 3500,
+    hoverpause: true, // set to false for nonstop rotate
+    arrowRightText: '&rarr;',
+    arrowLeftText: '&larr;'
+  });
+});
+</script>
+	<script type="text/javascript">
+  	  $(document).ready( function() {
+  	    $("#immersive_slider").immersive_slider({
+  	      container: ".main"
+  	    });
+  	  });
+
+    </script>
+        <script type="text/javascript">
+  	  $(document).ready( function() {
+  	    $("#immersive_slider2").immersive_slider({
+  	      container: ".main2"
+  	    });
+  	  });
+
+    </script>
+  
+  <script>
+
+  	var _gaq=[['_setAccount','UA-11278966-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+  	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  	s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  
+  
+   
+   
+      
+
+   
+    
+       <style>
+   /*   @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 200;
+        }
+             
+        a {
+            text-decoration: none;
+            
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+            height: 5002px;
+        }
+
+        .container .overlay .text a {
+            color:#fff;}
+        
+        header {
+            height: 139px;
+            position: relative;
+
+        }
+
+        header img {
+            position: absolute;
+            top: 25px;
+            left: 172px;
+        }
+
+        header #sc {
+            position: absolute;
+            top: 45px;
+            left: 440px;
+            width: 308px;
+            height: 34px;
+            border: 2px solid #33afe9;
+            border-radius: 5px 0 0 5px;
+        }
+
+        header #sb {
+            position: absolute;
+            top: 42px;
+            left: 748px;
+        }
+
+
+        header nav ul {
+            overflow: hidden;
+            position: absolute;
+            top: 7px;
+            right: 10px;
+        }
+
+        header nav ul li {
+            float: left;
+            color: #33afe9;
+            padding: 0 10px;
+            font-size: 0.8rem;
+        }
+
+        header nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        header nav ul li:last-child {
+            margin-right: 0;
+        }
+
+
+
+        #main {
+            width: 100%;
+            height: 4755px;
+            
+        }
+        #main a {color:#3f3f3f;
+            font-weight:400;
+        }
+        #main p {font-size:0.8rem;}
+        }
+        #main #section1 {
+            height: 397px;
+            border:1px solid #33afe9;
+            overflow:hidden;
+            
+        }
+        
+        #main #section1>.bxslider>ul {
+            float:left;
+        }
+
+        #main #section2 {
+            height: 906px;
+            width: 100%;
+            position: relative;
+        }
+
+        #main #section2 #n1 a,
+        #main #section2 #n2 a {
+            color: #fff;
+        }
+
+        #main #section2 #n1 a:hover,
+            #main #section2 #n2 a:hover 
+           
+         {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        #main #section2 #book_field {
+            position: absolute;
+            left: 21px;
+            top: 0px;
+            height: 30px;
+            background-color: #33afe9;
+            color: #fff;
+            border: none;
+        }
+
+        #main #section2 #n1 {
+            height: 30px;
+            background-color: #33afe9;
+
+        }
+
+        #main #section2 #n1 ul {
+            overflow: hidden;
+            position: absolute;
+            top: 5px;
+            left: 270px;
+        }
+
+        #main #section2 #n1 ul li {
+            float: left;
+            color: #fff;
+            font-size: 0.8rem;
+            padding-right: 15px;
+        }
+
+        #main #section2 #n1 ul li:click {
+            font-weight: bold;
+        }
+
+        #main #section2 #n1 ul li span {
+            color: red;
+        }
+
+        #main #section2 #n2 ul {
+            overflow: hidden;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        #main #section2 #n2 ul li {
+            float: left;
+            color: #fff;
+            font-size: 0.8rem;
+            padding-right: 20px;
+        }
+    
+        #main #section2 #bs {
+            position: absolute;
+            top: 107px;
+            left: 400px;
+        }
+
+        #main #section2 table {
+            position: absolute;
+            top: 204px;
+            left: 69px;
+            
+            color: #3f3f3f;
+            font-weight: 100;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        #main #section2 table td {
+            padding-right: 66px;
+            padding-bottom: 96px;
+             color: #3f3f3f;
+        }
+
+        #main #section2 table td:last-child {
+            padding: none;
+        }
+
+        #main #section2 table p>a {
+            color: #3f3f3f;
+            font-size: 0.75rem;
+            
+        }
+        #main #secttion2 table a {
+            color:#3f3f3f;
+        }
+        #main #section2 table span {
+            color: red;
+        }
+
+        #main #section2 table td>a:link,
+        #main #section2 table td>a:visited {
+            color: #3f3f3f;
+            font-weight: 100;
+            font-size:0.9rem;
+        }
+           #main #section2 table h5 {
+               margin-bottom:5px;
+           }   
+
+        #main #section3 {
+            width: 100%;
+            height: 1380px;
+        }
+
+        #main #section3 #s3_part1 {
+            margin-top: 59px;
+            height: 347px;
+        }
+
+        #main #section3 #s3_part2 {
+            height: 35px;
+            background-color: #33afe9;
+            position: relative;
+        }
+
+        #main #section3 #s3_part2 ul {
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 175px;
+        }
+           #main #section3 #s3_part2 a:hover{
+           font-weight: bold;
+            color: darkblue;
+           }
+        #main #section3 #s3_part2 ul li {
+            float: left;
+            font-size: 0.8rem;
+            padding-right: 20px;
+        }
+
+        #main #section3 #s3_part2 ul li a {
+            color: #fff;
+        }
+
+        #main #section3 #s3_part3 {
+            height: 1003px;
+            position: relative;
+            
+            color: #3f3f3f;
+            font-weight: 100;
+        }
+
+        #main #section3 #s3_part3 #reco {
+            position: absolute;
+            top: 84px;
+            left: 328px;
+        }
+
+        #main #section3 #s3_part3 table {
+            position: absolute;
+            top: 205px;
+            left: 69px;
+            text-align: center;
+        }
+
+        #main #section3 #s3_part3 table td {
+            padding-right: 57px;
+            padding-bottom: 147px;
+        }
+        
+        #main #section3 #s3_part3 table td>a {
+            color:#3f3f3f;
+            font-size:0.75rem;
+        }
+
+        #main #section3 #s3_part3 table td:last-child {
+            padding: none;
+        }
+
+        #main #section3 #s3_part3 table>p>a {
+            color: #3f3f3f;
+            
+        }
+
+        #main #section3 #s3_part3 table h5>a:link {
+            
+            color: #3f3f3f;
+            font-weight: 100;
+        }
+
+        #main #section3 #s3_part3 table h5>a:visited {
+            font-size:0.9rem;
+            color: #3f3f3f;
+            font-weight: 100;
+        }
+           #main #section3 #s3_part3 table h5{
+           font-size:0.8rem;
+           margin-bottom:5px;}
+
+        #main #section3 #s3_part3 table span {
+            color: red;
+        }
+
+        #main #section4 {
+            height: 602px;
+            background-color: #ecf1f1;
+            margin-top: 64px;
+            position: relative;
+
+        }
+
+        #main #section4 #s4m1 {
+            position: absolute;
+            top: 78px;
+            left: 333px;
+        }
+
+        #main #section4 table {
+            position: absolute;
+            top: 194px;
+            left: 74px;
+        }
+
+        #main #section4 table td {
+            padding: 5px;
+        }
+
+        #main #section4 ul {
+            overflow: hidden;
+            position: absolute;
+            top: 509px;
+            left: 108px;
+        }
+
+        #main #section4 ul li {
+            float: left;
+            padding-right: 100px;
+        }
+
+        #main #section4 ul li:last-child {
+            padding: 0;
+        }
+
+        #main #section4 ul li a:visited,
+        #main #section4 ul li a:link {
+            color: #3f3f3f;
+            font-size: 0.8rem;
+            font-weight: 100;
+            text-align: center;
+        }
+
+
+        #main #section4 ul li p {
+            font-size: 0.8rem;
+        }
+
+        #main #section4 ul li span {
+            color: red;
+        }
+           #main #section4 h4 {
+               margin-bottom:5px;
+           }
+        /*   #main #section4 tr {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #main #section4 ul table td {
+            padding-right: 5px;
+        }*/
+
+        #main #section5 {
+            height: 436px;
+          /*  background-color: #33afe9;*/
+            position: relative;
+            margin-top:60px;
+        }
+    /*    #main #section5 .silder3 {
+            position:absolute;
+            z-index:3;*/
+        }
+
+        #main #section5 img {
+            position: absolute;
+            top: 16px;
+            left: 33px;
+        }
+
+        #main #section6 {
+            height: 1120px;
+            position:relative;
+             margin-top:-30px;
+        }
+
+        #main #section6 #s6_part1 #card_review,
+        #main #section6 #s6_part2 #trailer,
+        #main #section6 #s6_part3 #before {
+            margin: 0 auto;
+        }
+
+        #main #section6 #s6_part1 {
+            height: 448px;
+            position: relative;
+           }
+        #main #section6 #s6_part2 {
+            height: 353px;
+            position: relative;
+            
+        }
+
+        #main #section6 #s6_part3 {
+            height: 235px;
+            position: relative;
+            
+        }
+
+        #main #section6 #s6_part1 #card_review {
+            height: 369px;
+            width: 977px;
+          /*  border: 1px solid #33afe9;*/
+            position: relative;
+            
+          /*  background-image: url('images/last_main_back_1.png');
+            background-repeat: no-repeat;
+            background-position: left;*/
+        }
+
+      /*  #main #section6 #s6_part1 #card_review #left {
+            position: absolute;
+            top: 174px;
+            left: 6px;
+        }
+
+        #main #section6 #s6_part1 #card_review #rv_main {
+            position: absolute;
+            top: 27px;
+            left: 150px;
+        }
+
+        #main #section6 #s6_part1 #card_review #right {
+            position: absolute;
+            top: 174px;
+            right: 12px;
+        }
+
+        #main #section6 #s6_part1 #card_review #specipic {
+            position: absolute;
+            bottom: 26px;
+            left: 600px;
+        }
+
+        #main #section6 #s6_part1 #card_review #in_my_cart {
+            position: absolute;
+            bottom: 26px;
+            left: 750px;
+        }
+
+        #main #section6 #s6_part1 #card_review h2 {
+            position: absolute;
+            top: 20px;
+            left: 21px;
+
+        }
+
+        #main #section6 #s6_part1 #card_review h2 a:link,
+        #main #section6 #s6_part1 #card_review h2 a:visited {
+            color: #151945;
+        }
+
+        #main #section6 #s6_part1 #card_review #p1_text {
+            position: absolute;
+            top: 53px;
+            left: 600px;
+        }
+
+        #main #section6 #s6_part1 #card_review #p1_text a:visited,
+        #main #section6 #s6_part1 #card_review #p1_text a:link {
+            color: #3f3f3f;
+        }
+
+        #main #section6 #s6_part1 #card_review #p1_text h4 {
+            margin-top: 20px;
+            font-weight: 200;
+            font-size: 0.9rem;
+            line-height: 25px;
+        }
+
+        #main #section6 #s6_part1 #card_review #p1_text p {
+            font-size: 0.78rem;
+            margin-top: 20px;
+        }*/
+
+        #main #section6 #s6_part2 #trailer {
+            height: 322px;
+            width: 977px;
+            
+           /* border: 1px solid #33afe9;*/
+            /*  position: absolute;
+            top: 459px;
+            left: 12px;
+            position: relative;*/
+          /*  background-image: url('images/last_main_back_2.png');
+            background-repeat: no-repeat;
+            background-position: right;*/
+        }
+/*
+        #main #section6 #s6_part2 #trailer #left {
+            position: absolute;
+            top: 159px;
+            left: 18px;
+        }
+
+        #main #section6 #s6_part2 #trailer #tr_main {
+            position: absolute;
+            top: 29px;
+            left: 550px;
+        }
+
+        #main #section6 #s6_part2 #trailer #right {
+            position: absolute;
+            top: 159px;
+            right: 20px;
+        }
+
+        #main #section6 #s6_part2 #trailer h2 {
+            position: absolute;
+            top: 23px;
+            left: 26px;
+            color: #151945;
+        }
+
+        #main #section6 #s6_part2 #trailer #bt {
+            position: absolute;
+            bottom: 50px;
+            left: 371px;
+        }
+
+        #main #section6 #s6_part2 #trailer h2 a:link,
+        #main #section6 #s6_part2 #trailer h2 a:visited {
+            color: #151945;
+        }
+
+        #main #section6 #s6_part2 #trailer #p2_text {
+            position: absolute;
+            top: 68px;
+            left: 45px;
+        }
+
+        #main #section6 #s6_part2 #trailer #p2_text a:visited,
+        #main #section6 #s6_part2 #trailer #p2_text a:link {
+            color: #3f3f3f;
+        }
+
+        #main #section6 #s6_part2 #trailer #p2_text h4 {
+            margin-top: 20px;
+            font-weight: 200;
+            font-size: 0.9rem;
+            line-height: 25px;
+        }
+
+        #main #section6 #s6_part2 #trailer #p2_text p {
+            font-size: 0.7rem;
+            margin-top: 20px;
+        }*/
+
+        #main #section6 #s6_part3 {
+           margin-top:37px; 
+            position:absolute;
+            bottom:-780px;
+            left:-19px;
+        
+        }
+
+        #main #section6 #s6_part3 #before {
+           
+            width: 977px;
+            height: 189px;
+
+            border: 1px solid #33afe9;
+            /*  top: 818px;
+            left: 13px;*/
+            position: relative;
+            
+            position:absolute;
+            bottom:13px;
+            left:27px;
+            
+            background-image: url('images/last_main_back_3.png');
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        #main #section6 #s6_part3 #before h2 {
+            position: absolute;
+            top: 1px;
+            left: 12px;
+            color: #151945;
+        }
+
+        #main #section6 #s6_part3 #before h2 a:visited,
+        #main #section6 #s6_part3 #before h2 a:link {
+            color: #151945;
+        }
+
+
+        #main #section6 #s6_part3 #before h2 span {
+            color: #fff;
+        }
+
+        #main #section6 #s6_part3 #before ul {
+            overflow: hidden;
+            position: absolute;
+            top: 51px;
+            left: 17px;
+        }
+
+        #main #section6 #s6_part3 #before #p3 li {
+            float: left;
+            padding-right: 85px;
+        }
+
+        #main #section6 #s6_part3 #before #p3 li:last-child {
+            padding: 0;
+        }
+
+        #main #section6 #s6_part3 #before #p3_text {
+            position: absolute;
+            top: 24px;
+            left: 710px;
+            font-size: 0.9rem;
+            line-height: 170%;
+        }
+
+        #main #section6 #s6_part3 #before #p3_text p a:visited,
+        #main #section6 #s6_part3 #before #p3_text p a:link {
+            color: #3f3f3f;
+        }
+
+        #main #section6 #s6_part3 #before #p3_ul {
+            position: absolute;
+            top: 48px;
+            left: 769px;
+        }
+
+        #main #section6 #s6_part3 #before #p3_ul li {
+            padding-bottom: 33px;
+        }
+
+        #main #section6 #s6_part3 #before #p3_ul li:last-child {
+            padding: 0;
+        }
+
+ #main #section6 #s6_part3 #before h2>a {
+            font-size:1.4rem;
+            color: #151945;
+     font-weight:600;
+        }
+           
+        /*-----------------------------푸터--------------------------------------*/
+
+        footer {
+
+            height: 106px;
+            background-color: #33afe9;
+            color: #fff;
+            position: relative;
+
+        }
+
+        footer img {
+            position: absolute;
+            bottom: 19px;
+            left: 7px;
+
+        }
+
+        footer ul {
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 150px;
+            /*     font-size: 0.7rem;
+            */
+        }
+
+
+        footer ul li {
+            float: left;
+            padding: 0 45px;
+            font-size: 0.75rem;
+            line-height: 170%;
+            text-align: justify;
+        }
+
+        
+   
+    /*슬라이드바2*/
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ccc;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size:15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.text a {color:#fff;}
+         
+
+/*카드리뷰 슬라이드 3*/
+         
+      .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 20px auto;
+    }    
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+    
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+    
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+    
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #A2261E;
+    }
+    .btn {
+      width: 200px;
+      color: #fff;
+      border: none;
+      margin-left: 10px;
+      background: black;
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: #444;
+      padding: 10px;
+      margin: 0 0 0 0;
+      background: #161923;
+      color: #FFF;
+      float: left;
+      width: 100%;
+    }
+    .credit a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      font-size: 13px;
+      color: #000;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+    .back:hover {
+      color: black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+       .page_container {
+      max-width: 960px;
+      margin: 50px auto;
+    }
+
+    .header {
+      background: white;
+      padding-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .header .menu {
+      padding-bottom: 10px;
+    }
+
+  /*    .content {width:488px;
+      }
+     /* .content img {width:100%;}*/
+        
+   /* .img img {width:486px;
+     }
+    .img img {width:100%;}*/
+      
+      .benefits {
+      color: black;
+      height: 100px;
+      background: #FFF;
+      position: relative;
+      width: 100%;
+      padding: 25px;
+      font-size: 40px;
+      font-weight: 100;
+      float: left;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    .benefits .page_container{
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+  
+    
+    .immersive_slider .is-slide .content a {
+      color: #333;
+    }
+         
+</style>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        
+           <header>
+            <img src="images/h_logo_01.png" alt="main_logo">
+
+
+            <input id="sc" type="search" size="10" placeholder=" 통합 검색">
+            <input id="sb" type="image"  src="images/m_search_02.png" alt="">
+
+            <nav>
+                <ul>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>장바구니</li>
+                    <li>고객센터</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="main">
+
+<div id="section1">
+    <div class="slider">
+        <div><a href="#"><img src="images/slider1.png" alt=""></a></div>
+        <div><a href="#"><img src="images/slider2.png" alt=""></a></div>
+        <div><a href="#"><img src="images/slider3.png" alt=""></a></div>
+        <div><a href="#"><img src="images/slider4.png" alt=""></a></div>
+        <div><a href="#"><img src="images/slider5.png" alt=""></a></div>
+        <div><a href="#"><img src="images/slider6.png" alt=""></a></div>
+
+    </div>
+</div>
+
+
+            <div id="section2">
+
+                <select id="book_field" name="분야보기▼" >
+               <option>분야보기</option>
+               <option>국내도서</option>
+               <option>외국도서</option>
+                <option>음반</option>
+               <option>DVD</option>
+               <option>전집</option>
+               <option>전자책</option>
+           
+            </select>
+
+                <nav id="n1">
+                    <ul>
+                        <li><a href="#">베스트셀러</a></li>
+                        <li><a href="#">새로 나온 책</a></li>
+                        <li><a href="#">새로 나<span>올</span> 책</a></li>
+                        <li><a href="#">출판사 랭킹</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">추천도서</a></li>
+                    </ul>
+                </nav>
+                <nav id="n2">
+                    <ul>
+                        <li><a href="#">카드리뷰</a></li>
+                        <li><a href="#">북펀드</a></li>
+                    </ul>
+                </nav>
+                <img id="bs" src="images/m1s2_01.png" alt="best_seller">
+                <table>
+                    <tr>
+                        <td><div class="container"><a href="#"><img src="images/m1s2_02.png" alt="book1">
+                         </a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+
+                            <a href="#">
+                                <h5>82년생 김지영</h5>
+                            </a>
+
+                            <p><span><s>13,000</s></span>→11,700</p>
+
+                        </td>
+                        <td>
+<div class="container"> <a href="#"> <img src="images/m1s2_03.png" alt="book2"> </a> <div class="overlay">
+      <div class="text"> <a href="#">장바구니<br><br><br>
+          구매하기</a> </div> </div> </div>
+                            <a href="#">
+                                <h5>남아 있는 나날</h5>
+                            </a>
+                            <p><span><s>13,000</s></span>→11,700</p>
+                        </td>
+                        <td>
+<div class="container"><a href="#"><img src="images/m1s2_04.png" alt="book3"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                            <a href="#">
+                                <h5>언어의 온도</h5>
+                            </a>
+                            <p><span><s>13,800</s></span>→12,400</p>
+                        </td>
+                        <td>
+<div class="container"><a href="#"><img src="images/m1s2_05.png" alt="book4"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                            <a href="#">
+                                <h5>일단 오늘은 나한테...</h5>
+                            </a>
+                            <p><span><s>13,800</s></span>→12,400</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+<div class="container"><a href="#"><img src="images/m1s2_06.png" alt="book5"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                            <a href="#">
+                                <h5>세상은 바꿀 수 있습니다</h5>
+                            </a>
+                            <p><span><s>16,000</s></span>→14,400</p>
+                        </td>
+                        <td>
+<div class="container"><a href="#"><img src="images/m1s2_07.png" alt="book6"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                            <a href="#">
+                                <h5>트렌드 코리아 2018</h5>
+                            </a>
+                            <p><span><s>18,000</s></span>→16,200</p>
+                        </td>
+                        <td>
+<div class="container"><a href="#"><img src="images/m1s2_08.png" alt="book7"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                            <a href="#">
+                                <h5>신경끄기의 기술</h5>
+                            </a>
+                            <p><span><s>15,000</s></span>→13,500</p>
+                        </td>
+                        <td>
+<div class="container"><a href="#"><img src="images/m1s2_09.png" alt="book8"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                            <a href="#">
+                                <h5>나를 보내지 마</h5>
+                            </a>
+                            <p><span><s>13,000</s></span>→11,700</p>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+            <div id="section3">
+                <div id="s3_part1">
+        
+          <div class="slider2">
+    <div><a href="#"><img src="images/sslider1.png" alt=""></a></div>
+    <div><a href="#"><img src="images/sslider2.png" alt=""></a></div>
+    <div><a href="#"><img src="images/sslider3.png" alt=""></a></div>
+    
+    
+  </div>
+
+</div>
+
+                <div id="s3_part2">
+
+                    <ul>
+                        <li><a href="#">국내도서</a></li>
+                        <li><a href="#">외국도서</a></li>
+                        <li><a href="#">eBook</a></li>
+                        <li><a href="#">온라인 중고샵</a></li>
+                        <li><a href="#">중고매장</a></li>
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">음반</a></li>
+                        <li><a href="#">블루레이</a></li>
+                        <li><a href="#">알라딘굿즈</a></li>
+                        <li><a href="#">북플/서재</a></li>
+                    </ul>
+
+
+                </div>
+                <div id="s3_part3">
+                    <img id="reco" src="images/m1s3_00.png" alt="recommend_books">
+
+
+                    <table>
+                        <tr>
+                            <td>
+<div class="container"><a href="#"><img src="images/m1s3_02.png" alt="book9"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>지도 펴고 세계 여행</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                            <td>
+<div class="container"><a href="#"><img src="images/m1s3_03.png" alt="book10"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>잠수네 초등5,6학년..</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                            <td>
+<div class="container"><a href="#"><img src="images/m1s3_04.png" alt="book11"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>나는 4시간만 일한다</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                            <td>
+<div class="container"><a href="#"><img src="images/m1s3_05.png" alt="book12"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>열두 달 나무 아이</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div class="container"><a href="#"><img src="images/m1s3_06.png" alt="book13"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>배반(The Sellout)</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                            <td><div class="container"><a href="#"><img src="images/m1s3_07.png" alt="book14"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>세상은 바꿀 수 있습니다</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                            <td><div class="container"><a href="#"><img src="images/m1s3_08.png" alt="book15"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>서른의 반격</h5>
+                                </a>
+                                <p><span><s>16,000</s></span>→14,400</p>
+                            </td>
+                            <td><div class="container"><a href="#"><img src="images/m1s3_09.png" alt="book16"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+          구매하기</a></div></div></div>
+                                <a href="#">
+                                    <h5>모든 삶은 작고 크다..</h5>
+                                </a>
+                                <p><span><s>23,700</s></span>→21,330</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+
+
+
+
+            </div>
+            <div id="section4">
+                <img id="s4m1" src="images/m1s4_1.png" alt="special_price">
+                <table>
+                    <tr>
+                        <td><div class="container"><a href="#"><img src="images/m1s4_2.png" alt="book17"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+구매하기</a></div></div></div></td>
+                        <td><div class="container"><a href="#"><img src="images/m1s4_3.png" alt="book18"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+구매하기</a></div></div></div></td>
+                        <td><div class="container"><a href="#"><img src="images/m1s4_4.png" alt="book19"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+구매하기</a></div></div></div></td>
+                        <td><div class="container"><a href="#"><img src="images/m1s4_5.png" alt="book20"></a><div class="overlay">
+      <div class="text"><a href="#">장바구니<br><br><br>
+구매하기</a></div></div></div></td>
+                   
+                    </tr>
+                </table>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>브레인 홈트 브릿지 미로</h4>
+                            <p><span>6,860</span>원 (30%할인)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4>세계 명화 365</h4>
+                            <p><span>14,000</span>원 (30%할인)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4>리락쿠마 종이접기</h4>
+                            <p><span>3,500</span>원 (50%할인)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4>엄마 까투리 자연관찰...</h4>
+                            <p><span>5,950</span>원 (30%할인)</p>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div id="section5">
+
+  <div class="slider3">
+  
+        
+         <div><a href="#"><img src="images/3silder1.PNG" alt=""></a></div>
+         <div><a href="#"><img src="images/3silder2.PNG" alt=""></a></div>
+         <div><a href="#"><img src="images/3silder3.PNG" alt=""></a></div>
+         <div><a href="#"><img src="images/3silder4.PNG" alt=""></a></div>
+         <div><a href="#"><img src="images/3silder5.png" alt=""></a></div>
+         <div><a href="#"><img src="images/3silder6.png" alt=""></a></div>
+    
+  </div>
+ 
+</div>
+            
+
+            <div id="section6">
+
+                <div id="s6_part1">
+
+                    <div id="card_review">
+<div class="main">
+      <div class="page_container">
+          
+         <div id="immersive_slider">
+          <div class="slide" data-blurred="">
+            <div class="content">
+              <a href="#" target="_blank"><img src="images/foot_01_01.png" alt=""></a>
+              
+            </div>
+            <div class="image">
+              <a href="#" target="_blank">
+                <img src="images/foot_01_02.png" alt="Slider 1">
+              </a>
+            </div>
+          </div>
+          
+          <div class="slide"  data-blurred="" >
+            <div class="content">
+              <a href="#" target="_blank"><img src="images/foot_01_01.png" alt=""></a>
+            </div>
+            <div class="image">
+             <a href="#" target="_blank"><img src="images/foot_01_02.png" alt="Slider 2"></a>
+            </div>
+          </div>
+          <div class="slide"  data-blurred="" >
+            <div class="content">
+              <a href="#" target="_blank"><img src="images/foot_01_01.png" alt=""></a>
+             
+            </div>
+            <div class="image"><a href="#" target="_blank">
+             <img src="images/foot_01_02.png" alt="Slider 3"></a>
+            </div>
+          </div>
+          
+          <a href="#" class="is-prev">&laquo;</a>
+          <a href="#" class="is-next">&raquo;</a>
+        </div>
+      </div>
+  	</div>
+  <!--	<div class="benefits">
+      <div class="page_container">
+
+  	  </div>
+  	</div>-->
+               
+                <!--  <div class="slider">
+      <ul class="slides">
+        <li class="slide">
+          <figure>
+             <img src="images/foot_01.png" alt="">
+          
+        </li>
+        <li class="slide">
+            <img src="http://via.placeholder.com/975x327" alt="">
+        </li>
+        <li class="slide">
+         
+            <img src="http://via.placeholder.com/975x327" alt="">
+        </li>
+        <li class="slide">
+        
+            <img src="images/foot_01.png" alt="">
+        </li>
+        <li class="slide">
+         
+            <img src="http://via.placeholder.com/975x327" alt="">
+        </li>
+      </ul>
+                        </div>
+                    </div>
+    </div><!-- @end .slider -->
+  
+                   
+                     <!--  <h2><a href="#">카드 리뷰</a></h2>
+                        <a href="#"><img id="left" src="images/left_bar.png" alt="left_bar"></a>
+                        <a href="#"><img id="rv_main" src="images/m1s6p1_1.png" alt="riew_main"></a>
+                        <a href="#"><img id="right" src="images/right_bar.png" alt="right_bar"></a>
+
+                        <a href="#"><img id="specipic" src="images/m1s6p1_2.png" alt="specipic"></a>
+                        <a href="#"><img id="in_my_cart" src="images/m1s6p1_3.png" alt="inmycart"></a>
+
+                        <div id="p1_text">
+                            <a href="#">
+                                <h3>또다시 같은 꿈을 꾸었어 (노블판)</h3>
+                                <h4>스미노 요루 (지은이), 양윤옥 (옮긴이) |<br> ㈜소미미디어 | 2017년 10월</h4>
+                                <p>자타공인 똑똑하고 당돌한 소녀 고야나기<br> 나노카는 학교 안에는 이렇다 할 친구가 <br> 없지만 학교 밖에는 친구가 많다. <br> 까칠하고 도도하며 꼬리가 반으로 잘린 고양이<br> ‘그녀’, 예쁘고 상냥하며 함께 오셀로 게임을<br> 해주는 언니 아바즈레 씨. 그리고 항상 맛난 ...</p>
+                            </a>
+                        </div>-->
+      
+              
+ <div class="main">
+      <div class="page_container">
+          
+         <div id="immersive_slider2">
+          <div class="slide"  data-blurred="" >
+            <div class="content">
+              <a href="#" target="_blank"><img src="images/foot_02_01.png" alt=""></a>
+              
+            </div>
+            <div class="image">
+              <a href="#" target="_blank">
+                <img src="images/foot_02_02.png" alt="Slider 1">
+              </a>
+            </div>
+          </div>
+          
+          <div class="slide"  data-blurred="" >
+            <div class="content">
+              <a href="#" target="_blank"><img src="images/foot_02_01.png" alt=""></a>
+            </div>
+            <div class="image">
+             <a href="#" target="_blank"><img src="images/foot_02_02.png" alt="Slider 1"></a>
+            </div>
+          </div>
+          <div class="slide"  data-blurred="" >
+            <div class="content">
+              <a href="#" target="_blank"><img src="images/foot_02_01.png" alt=""></a>
+             
+            </div>
+            <div class="image">
+            <a href="#"><img src="images/foot_02_02.png" alt="Slider 1"></a>
+            </div>
+          </div>
+          
+          <a href="#" class="is-prev">&laquo;</a>
+          <a href="#" class="is-next">&raquo;</a>
+        </div>
+      </div>
+  	</div>
+  <!--	<div class="benefits">
+      <div class="page_container">
+
+  	  </div>
+  	</div>-->
+               
+          <!--      <div id="s6_part2">
+                    <div id="trailer">
+                        <h2><a href="#">북트레일러</a></h2>
+                        <a href="#">
+                            <a href="#"><img id="left" src="images/left_bar.png" alt="left_bar"></a>
+                        <a href="#"><img id="tr_main" src="images/m1s6p2_1.png" alt="riew_main"></a>
+                        <a href="#"><img id="right" src="images/right_bar.png" alt="right_bar"></a>
+
+                        <div id="p2_text">
+                            <a href="#">
+                                <h3>엄마의 자존감 공부</h3>
+                                <h4>김미경 (지은이) | 21세기북스 | 2017년 11월</h4>
+                                <h5>“천번을 미안해도 나는 엄마다”</h5>
+
+                                <p>
+                                    <언니의 독설>에서 흔들리는 30대 여성들에게 거침없는 독설을 날리고,<br>
+                                        <꿈이 있는 아내는 늙지 않는다>에서 아내들에게 잃어버린 꿈을 되찾아준 김미경의 신작. <br> 대한민국 최고의 입심을 가진 강사로 화려한 연단에 서는 김미경도 집에 돌아가면 <br> 세 아이를 키우는 워킹 맘이 된다. 나름의 소신과 철학을 가지고... </a>
+                            </p>
+
+                        </div>
+                        <a href="#"><img id="bt" src="images/m1s6p2_2.png" alt="booktrailer"></a>
+
+                    </div>
+
+-->
+                    <div id="s6_part3">
+                        <div id="before">
+                            <h2><a href="#">출간 <span>전</span> 연재</a></h2>
+
+                            <ul id="p3">
+                               
+                                <li><a href="#"><img  src="images/m1s6p3_1.png" alt="sumnail1"></a>
+                                    <div class="text"><a href="#"></a></div></li>
+                                    
+                                    
+                                <li><a href="#"><img  src="images/m1s6p3_2.png" alt="sumnail2"></a>
+                                    <div class="text"><a href="#"></a></div></li>
+                                <li><a href="#"><img  src="images/m1s6p3_3.png" alt="sumnail3"></a>
+                                    <div class="text"><a href="#"></a></div></li>
+                            </ul>
+
+                            <div id="p3_text">
+                                <p><a href="#">여행이라는 참 이상한 일- 10회</a><br>
+                                    <br><a href="#"> 슬픈 열대 - 11회</a><br>
+                                    <br><a href="#"> 남자의 시대는 끝났다 - 8회</a><br></p>
+
+                            </div>
+
+                            <ul id="p3_ul">
+                                <li><a href="#"><img src="images/spec.png" alt="button"></a><a href="#"><img src="images/alram.png" alt="button"></a></li>
+                                <li><a href="#"><img src="images/spec.png" alt="button"></a><a href="#"><img src="images/alram.png" alt="button"></a></li>
+                               
+                                 <li><a href="#"><img src="images/spec.png" alt="button"></a><a href="#"><img src="images/alram.png" alt="button"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+</div>
+</div>
+</div>
+                    <footer>
+                        <img src="images/footer_1.png" alt="aladin_logo">
+                        <ul>
+
+
+                            <li>(주)알라딘커뮤니케이션<br> 대표이사 : 조유식
+                                <br> 고객정보보호 책임자 : 조유식<br> E-mail : privacy@aladin.co.kr
+                            </li>
+                            <li>일반문의 &nbsp; &nbsp; 1544-2514<br> 중고샵 &nbsp; &nbsp; 02-364-8947<br> 1 : 1 고객상담
+                                <br> 메일로 빠르게 답신드립니다.
+                            </li>
+                            <li>구매안전 에스크로 서비스<br> 안전거래 현금결제시 이용가능<br><br> Copyright 1999-2017 Aladin Communication Inc</li>
+                        </ul>
+
+
+                    </footer>
+
+
+
+
+                </div>
+                </div>
+       
+                </body>
+
+</html>
