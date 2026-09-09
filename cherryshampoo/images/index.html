@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NEXUS 5X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script> 
+    $(document).ready(function(){
+    $("#roll").click(function(){
+      $("#photo").attr("src","images/backwhite.png");
+      });
+    $("#roll2").click(function(){
+      $("#photo").attr("src","images/backblack.png");
+    });
+    $("#roll3").click(function(){
+      $("#photo").attr("src","images/backmint.png");
+    });
+});
+    
+    </script>
+       
+         <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', serif;
+            
+        }
+
+        #wrap {
+            width: 1200px;
+            height: 8026px;
+            margin: 0 auto;
+           
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color:#222
+                font-weight:300;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /*header height:995
+        main1 :3367
+        main2 :1919
+        footer:1745 */
+
+        header {
+            height: 995px;
+            position: relative;
+
+        }
+
+        header #nav_s {
+            margin-top: 52px;
+            background-image: url('images/header_1.png');
+            background-repeat: no-repeat;
+
+        }
+
+        header #nav_s #nav1 {
+            position: relative;
+            height: 52px;
+        }
+
+        header #nav_s #nav1 ul {
+            overflow: hidden;
+            position: absolute;
+            top: -40px;
+            right: 15px;
+        }
+
+        header #nav_s #nav1 ul li {
+            float: left;
+            padding: 0 10px;
+            border-right: 1px solid #a5a5a5;
+            font-size: 0.7rem;
+        }
+
+        header #nav_s #nav1 ul li:last-child {
+            border-right: none;
+        }
+
+        header #nav_s #nav1 ul li a {
+            color: #a5a5a5;
+            font-size: 0.7rem;
+        }
+
+        header #nav_s #nav2 img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        header #nav_s #nav2 ul {
+            overflow: hidden;
+            position: absolute;
+            top: 2px;
+            left: 160px;
+        }
+
+        header #nav_s #nav2 ul li {
+            float: left;
+            padding: 0 10px;
+        }
+
+        header #nav_s #nav2 ul li a {
+            font-size: 2.5rem;
+            font-weight: 200;
+            color: #2c2c2c;
+        }
+
+
+
+        header #nav_s #nav2 ul li a:hover {
+            color: #ffa101;
+            font-weight: bold;
+        }
+
+        header #nav_l h2 {
+            position: absolute;
+            top: 475px;
+            left: 361px;
+            font-size: 2rem;
+            text-align: right;
+            color: #fff;
+            font-weight: 100;
+        }
+
+        header #nav_l img {
+            position: absolute;
+            top: 139px;
+            left: 0;
+            
+        }
+
+        header #nav_r h1 {
+            position: absolute;
+            top: 497px;
+            right: 144px;
+            font-size: 9rem;
+            font-weight: 100;
+            color: #fff;
+            text-shadow: -4px -4px 0 gray;
+
+        }
+
+        header #nav_r img {
+            position: absolute;
+            top: 139px;
+            right: 0;
+        }
+
+        /*----------------헤더끝----------------------------------*/
+
+        #main1 {
+            height: 1240px;
+        }
+
+        #main2 {
+            height: 2127px;
+
+        }
+
+        #main1 #sec_1 {
+            height: 1240px;
+            position: relative;
+            background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+19,e1e0df+50,ffffff+81,ffffff+100 */
+            background: #ffffff;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 19%, #e1e0df 50%, #ffffff 81%, #ffffff 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 19%, #e1e0df 50%, #ffffff 81%, #ffffff 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ffffff 0%, #ffffff 19%, #e1e0df 50%, #ffffff 81%, #ffffff 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+            /* IE6-9 */
+        }
+
+        #main1 #sec_1 h1 {
+            position: absolute;
+            top: 396px;
+            left: 185px;
+            font-weight: 400;
+        }
+
+        #main1 #sec_1 #photo {
+            position: absolute;
+            top: 300px;
+            right:0;
+            display:block;
+        }
+             
+             #main1 #sec_1 #color_con {
+                 position:absolute;
+                 right:10px;
+                 top:850px;
+                 
+             }
+
+        #main1 #sec_1 p {
+            position: absolute;
+            top: 544px;
+            left: 193px;
+            line-height: 30px;
+        }
+
+        #main2 #main2_sec_1 {
+            height: 2127px;
+            position: relative;
+            background-color: #e2e2e2;
+        }
+
+        #main2 #main2_sec_1 h1 {
+            position: absolute;
+            top: 166px;
+            right: 42px;
+            text-align: right;
+            font-weight: 400;
+        }
+
+        #main2 #main2_sec_1 p {
+            position: absolute;
+            top: 321px;
+            right: 42px;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        #main2 #main2_sec_1 #p1 {
+            width: 579px;
+            position: absolute;
+            bottom: 446px;
+            left: 110px;
+          /*  z-index: 2;*/
+        }
+
+        #main2 #main2_sec_1 #p2 {
+            width: 761px;
+            position: absolute;
+            bottom: 94px;
+            left: 385px;
+          /*  z-index: 3;*/
+        }
+
+        #main2 #main2_sec_1 #p3 {
+            width: 669px;
+            position: absolute;
+            bottom: 880px;
+            left: 515px;
+           /* z-index: 4;*/
+        }
+
+        #main2 #main2_sec_1 #p4 {
+            width: 442px;
+            position: absolute;
+            bottom: 589px;
+            left: 649px;
+            /*z-index: 5;*/
+        }
+
+        #main2 #main2_sec_1 #main2p {
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            z-index:100;
+
+        }
+
+
+        #main3 h1,
+        #main4 h1 {
+            font-weight: 500;
+
+        }
+
+
+        #main1 p,
+        #main2 p,
+        #main3 p,
+        #main4 p {
+            /* position: absolute;*/
+            line-height: 30px;
+        }
+
+
+
+        #main3 {
+            width: 100%;
+            height: 1029px;
+        }
+
+        #main3 #sec3_1 {
+            height: 289px;
+            background-color:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,ffa101+100 */
+background: #e2e2e2; /* Old browsers */
+background: -moz-linear-gradient(top, #e2e2e2 0%, #ffa101 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e2e2e2 0%,#ffa101 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e2e2e2 0%,#ffa101 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#ffa101',GradientType=0 ); /* IE6-9 */
+        }
+
+        #main3 #sec3_2 {
+            position: relative;
+            height: 740px;
+            background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa101+0,fcfcfc+80,fcfcfc+80,fcfcfc+99 */
+            background: #ffa101;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #ffa101 0%, #fcfcfc 80%, #fcfcfc 80%, #fcfcfc 99%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #ffa101 0%, #fcfcfc 80%, #fcfcfc 80%, #fcfcfc 99%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ffa101 0%, #fcfcfc 80%, #fcfcfc 80%, #fcfcfc 99%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa101', endColorstr='#fcfcfc', GradientType=0);
+            /* IE6-9 */
+        }
+
+
+        #main3 #sec3_2 h1 {
+            position: absolute;
+            top: 85px;
+            right: 51px;
+            text-align: right;
+        }
+
+        #main3 #sec3_2 p {
+            position: absolute;
+            top: 436px;
+            right: 51px;
+            text-align: right;
+        }
+
+        #main3 #sec3_2 #m31 {
+            position: absolute;
+            top:1px;
+            left: 41px;
+        }
+
+        #main3 #sec3_2 #m32 {
+            position: absolute;
+            top: 245px;
+            right: 150px;
+        }
+
+        #main4 {
+            position: relative;
+            width: 100%;
+            height: 890px;
+            background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fcfcfc+13,2d2d2d+100 */
+            background: #ffffff;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #ffffff 0%, #fcfcfc 13%, #2d2d2d 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #ffffff 0%, #fcfcfc 13%, #2d2d2d 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ffffff 0%, #fcfcfc 13%, #2d2d2d 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2d2d2d', GradientType=0);
+            /* IE6-9 */
+        }
+
+        #main4 h1 {
+            position: absolute;
+            top: 203px;
+            left: 150px;
+            text-align: right;
+        }
+
+        #main4 p {
+            position: absolute;
+            top: 383px;
+            left: 115px;
+            text-align: right;
+        }
+
+        #main4 #m41 {
+            position: absolute;
+            top: 128px;
+            right: 108px;
+        }
+
+        #main4 span {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /*------------------------푸터---------------------------*/
+
+        footer {
+            /* width: 100%;*/
+            height: 1745px;
+            position: relative;
+        }
+
+        footer #f1 {
+            height: 735px;
+            margin-bottom: 154px;
+            position: absolute;
+            top: 207px;
+            right: 60px;
+        }
+
+        footer #f2 {
+            width: 335px;
+            position: absolute;
+            bottom: 85px;
+            left: 0;
+        }
+
+        footer #f3 {
+            position: absolute;
+            bottom: 85px;
+            right: 0;
+        }
+
+        footer #spec1 {
+            position: absolute;
+            bottom: 120px;
+            left: 54px;
+            z-index: 10;
+            line-height: 50px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        footer #spec1 h1 {
+            color: #fff;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+
+        footer #spec2 table tr td {
+            padding: 0 20px;
+        }
+
+        footer #spec2 {
+            position: absolute;
+            bottom: 110px;
+            left: 405px;
+            z-index: 11;
+            line-height: 40px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        footer #f_nav {
+            margin-top: 30px;
+            height: 54px;
+            width: 100%;
+            background-image: url('images/footer_04.gif');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+
+        footer #f_nav ul {
+            overflow: hidden;
+            position: absolute;
+            left: 100px;
+            top: 12px;
+        }
+
+        footer #f_nav ul li {
+            float: left;
+            padding: 0 30px;
+        }
+
+        footer #f_nav ul li a {
+            font-size: 0.8rem;
+            color: #acacad;
+        }
+
+        footer #f_nav #logo1 {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        footer #f_nav #logo2 {
+            position: absolute;
+            top: 16px;
+            right: 10px;
+        }
+
+        footer #f_last {
+            position: absolute;
+            bottom: 16px;
+            right: 70px;
+
+        }
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+        
+        /* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#eee; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:#ddd; 
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header>
+            <div id="nav_s">
+                <div id="nav1">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">My page</a></li>
+                    </ul>
+                </div>
+                <div id="nav2">
+                    <a href="#"><img src="images/nexus_01.png"alt="nexus_logo"></a>
+                    <ul>
+                        <li><a href="#">5X</a></li>
+                        <li><a href="#">6P</a></li>
+                    </ul>
+                </div>
+                <div id="nav_l">
+                    <img src="images/header_2.png" alt="left">
+                    <h2>역대급 디자인과<br> 성능의 콜라보</h2>
+                </div>
+                <div id="nav_r">
+                    <img src="images/header_3.png" alt="right">
+                    <h1>5X</h1>
+                </div>
+
+            </div>
+
+
+        </header>
+
+        <div id="main1">
+            <div id="sec_1">
+             
+    <img src="images/backwhite.png" alt="white" id="photo">
+                
+                <h1>넥서스 최고의 전사</h1>
+
+                <p>5X는 최고의 기능과 심플한<br> 디자인의 초경량 기기로<br> 사용자의 편리성을 도모합니다<br>
+                    <br><br> 5.2인치의 디스플레이에<br> 헥사코어 snapdragon808<br> 이 탑재된 5X를 합리적인<br> 가격에 만나보세요.</p>
+                      <div id="color_con">
+                       <img src="images/color_03.png" alt="white" id="roll">
+   <img src="images/color_06.png" alt="black" id="roll2">
+   <img src="images/color_05.png" alt="mint" id="roll3">
+                </div></div>
+
+        </div>
+
+
+        <div id="main2">
+            <div id="main2_sec_1">
+                <img id="main2p" src="images/profile.png" alt="profile">
+                <h1>우리가 꿈꾸던<br> 최고의 카메라를 만나다</h1>
+                <p>어두운 환경에서 더욱 빛을 발하는<br> 넥서스5x의 카메라로 더 많은 빛을<br> 흡수하여 멋진 사진을 남겨보세요<br>
+                    <br><br> 넥서스5x로 찍은 사진들을 감상해보세요.</p>
+              
+             <!--    <img id="p1" src="images/p1.jpg" alt="green">
+
+       
+               
+                <img id="p2" src="images/p2.jpg" alt="kid">
+                
+       
+                
+                <img id="p3" src="images/p3.jpg" alt="dark">
+     
+                
+                <img id="p4" src="images/p4.jpg" alt="tomato">-->
+                
+                
+  
+    <img id="p1"src="images/p1.jpg" style="width:579px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+  
+    <img id="p2"src="images/p2.jpg" style="width:761px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+ 
+  
+    <img id="p3"src="images/p3.jpg" style="width:669px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  
+  
+    <img id="p4"src="images/p4.jpg" style="width:442px"onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+ 
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/p1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/p2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/p3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/p4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+                
+            </div>
+
+        </div>
+
+        <div id="main3">
+
+            <div id="sec3_1"></div>
+            <div id="sec3_2">
+
+                <img id="m31" src="images/m31.png" alt="phone_photo">
+
+
+                <h1>Google 포토를 이용한<br> 획기적인 사진정리</h1>
+                <img id="m32" src="images/m32.png" alt="google_photo">
+
+                <p>구글 포토를 이용해 동영상과 사진을 무제한<br> 으로 저장하세요 자동으로 저장되는 사진을<br> 간편하게 검색할 수 있습니다.</p>
+
+
+            </div>
+
+        </div>
+
+        <div id="main4">
+            <h1>지문 센서를 통한<br> 간편 보안</h1>
+
+            <p>지문 센서로 스마트폰을 켜고<br> 빠르고 안전하게 잠금 또는<br> 해제를 할 수 있습니다.<br>
+                <br>
+                <br>
+                <span>후면에 배치되어 누르기<br>
+           편리한 센서는 결제 시에도<br>
+           간편하게 눌러 사용 가능합니다.</span>
+            </p>
+
+            <img id="m41" src="images/m41.png" alt="finger_print">
+
+
+        </div>
+
+
+
+        <footer>
+
+            <img id="f1" src="images/spec.png" alt="spec">
+
+
+            <img id="f2" src="images/footer_02.gif" alt="left">
+            <div id="spec1">
+                <h1>상세 스펙</h1>
+                <ul>
+                    <li>운영체제 Android 버전:8.0.0</li>
+                    <li>디스플레이<br> 5.2인치 FHD LCD<br> 지문 방지 올레포빅 코딩
+                    </li>
+                    <li>후면카메라<br> 1,230만 화소 1.4μm 픽셀</li>
+                    <li>메모리 및 저장용량<br> RAM: 2GB<br> 내부저장소 16GB.32GB</li>
+
+                </ul>
+
+            </div>
+
+
+            <img id="f3" src="images/footer_03.gif" alt="right">
+            <div id="spec2">
+                <table>
+                    <tr>
+                        <td>크기 147.0*72.6*7.9mm</td>
+                        <td>대기 시간: 최대 420시간</td>
+                        <td>무선 및 위치</td>
+                    </tr>
+                    <tr>
+                        <td>무게 136g</td>
+                        <td>통화 시간: 최대 20시간</td>
+                        <td>LTE cat. 6<br> Wi-Fi 802.11 a/b/g/n/</td>
+                    </tr>
+                    <tr>
+                        <td>색상 -카본/쿼츠/아이스</td>
+                        <td>인터넷 (Wi-Fi): 최대 9시간<br> 인터넷 (LTE): 최대 8시간</td>
+                        <td>ac 2x2 MIMO, 듀얼 밴드<br> (2.4GHz, 5.0GHz)</td>
+                    </tr>
+                    <tr>
+                        <td>배터리 2700mAh</td>
+                        <td>동영상 재생: 최대 10시간<br> 오디오 재생: 최대 75시간</td>
+                        <td>블루투스 4.2</td>
+                    </tr>
+                    <tr>
+                        <td>포트 USB 타입-C 1개</td>
+                        <td>고속 충전: 10분 충전으로<br> 최대 4시간 사용</td>
+                        <td>NFC</td>
+                    </tr>
+                    <tr>
+                        <td>3.5mm 오디오 잭<br> 나노 SIM 슬롯 1개</td>
+                        <td>
+                            지문 / 근접 / 주변광 / 홀<br> Android 센서 허브 센서</td>
+                        <td>GPS / GLONASS<br> 디지털 나침반</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="f_nav">
+                <a href="#"><img id="logo1" src="images/logo_01.png" alt="google_logo"></a>
+                <ul>
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">개인정보 보호 및 약관</a></li>
+                    <li><a href="#">지원</a></li>
+                </ul>
+                <a href="#"><img id="logo2" src="images/logo_2.png" alt="google_plus_logo"></a>
+            </div>
+            <div id="f_last">
+                <select name="언어">
+                <option value="한국어">한국어(대한민국)</option>
+                <option value="영어">English</option>
+                </select>
+
+            </div>
+
+        </footer>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+
+            <div id="caption"></div>
+        </div>
+    </div>
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+
+
+</html>
