@@ -1,198 +1,191 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html>
 <head>
-	<head>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>old project</title>
-    
-    <!-- 1. 핵심 fullPage.js CSS는 안전한 CDN으로 로드 -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
-    
-    <!-- 2. 기존 디자인을 잡던 examples.css (경로가 같은 위치라면 파일명만, 하위 폴더라면 폴더명 포함) -->
-    <link rel="stylesheet" type="text/css" href="examples.css" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Economica|Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Economica|Open+Sans" rel="stylesheet">
+ <style>
+* {
+    box-sizing: border-box;
+}
 
-    <!-- 3. jQuery 및 fullPage.js JS는 안전한 CDN으로 로드 (http -> https) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+body {
+    background-color: #f1f1f1;
+   /* padding: 20px;*/
+    font-family:'Economica', sans-serif;
+    font-weight:400;
+    color:white;
     
-    <!-- 4. 스크롤 오버플로우 및 fullPage.js 본체 JS -->
-    <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
-    
-    <!-- 5. 기존 상단 탭 및 예제 동작용 js (경로 확인 필요) -->
-    <script type="text/javascript" src="examples.js"></script>
-    
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-                menu: '#menu',
-                loopTop: true,
-                loopBottom: true
-            });
-        });
-    </script>
-</head>
+}
+    span {color:yellow;}
 
-<style>
-    /*
-     header {
-       
-        width:100%;
-        position:absolute;
+    h3>a {font-weight:600;}
+a {
+            text-decoration: none;
+            color: midnightblue;
+            opacity: 0.65%;
+            font-weight:100;
+        }
+
+ .bgimg-1 {
+            background-image: url("images/lampionblume.jpg");
+            height: 100%;
     }
+
     
-    header>nav{position:relative;
-        height:30px;
-        font-family: 'Quicksand', sans-serif;
-        font-size:0.9rem;
-        font-weight:500;
-        top:15px;
-        left:65%;
-        
-    }
-    header>nav>ul {list-style-type:none;}
-    
-    header>nav>ul>li {
-        float:left;
-        padding:0 0.7%;
-    }
-    
-    header>nav>ul>li>a {
-        text-decoration:none;
-        color:black;
-    }
-    */
-    
-    
-    h1 {
-        font-family:'Racing Sans One', cursive;
-        font-size:5rem;
-        color:#fff;
-        text-shadow:-1px -1px 0 #eee;
-    }
-    #color1 {
-        color:deepskyblue;
-        text-shadow:2px 2px 0 #000;
-    }
-    #color2 {
-        color:orange;
-    }
-    
-    
-    a { text-decoration:none;
-        color:firebrick;
-        font-weight:600;
-        font-size:1rem;
-        text-decoration:Corbel
-    
-    }
-    p>a:focus {
-        color:aliceblue;
-        text-shadow:2px 2px 0 #333;
-        
-    }
-    
-    li {font-family:Corbel;
-       
-    }
-    .section {
-        background-color:black;
-    }
-    
-    
-   #section0 {
-       
-        background: url(images/Ford-Kuga-16.jpg) no-repeat center center ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 0.9;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
 }
- #section1 {
-        background: url(images/aladin.jpg) no-repeat center center ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-     #section2 {
-        background: url(images/nexus5x.jpg) no-repeat center center ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
- #section3 {
-        background: url(images/lightblur.jpg) no-repeat center center ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
+    p{color:midnightblue;
+    font-size:0.8rem;
+    line-height:20px;
+    font-weight:400;}
     
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    letter-spacing:20px;
+    font-weight:400;
+}
+
+h2 {letter-spacing:20px;
+    font-weight: 300;
+    padding:0 20px;}
+    
+h3 {color:midnightblue;}
+ h5 {
+        margin-top:50px;
+    font-weight:200;
+    line-height:30px;}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background:url('images/backw.png');
+    padding: 10px;
+ /*   opacity: 0.65;*/
+    background-size: cover;
+}
+ /*   .content:click {
+         background:url('images/backw.png');
+    padding: 10px;
+    background-size: cover;
+    }*/
+    
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 </style>
 </head>
-<body>
-<!--
-<header>
-<nav>
-    <ul>
-        <li><a href="http://www.naver.com">Main</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    
-</nav>    
-    </header>-->
 
-<ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Ford Kuga 2017</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Aladin Web Page</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Google Nexus 5x</a></li>
-	<li data-menuanchor="4thPage"><a href="#4thPage">GO Gallery</a></li>	
-</ul>
+<body>
+
+<div class="bgimg-1">
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MINJEONG'S GALLERY</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
 <!--
-<ul id="menu2">
-    <li><a href="index.htm">GO HOME</a></li>
-	<li><a href="#">CONTACT</a></li>
-</ul>
+<p>Resize the browser window to see the responsive effect.</p>
 -->
-<div id="fullpage">
-	<div class="section " id="section0">
-		<h1>KUGA 2017</h1>
-		<p><a href="/lemonsoda/index.htm">ENTER</a></p>
-   
-           </div>
-	
-	<div class="section" id="section1">
-		<div class="intro">
-			<h1 id="color1">Aladin Website</h1>
-			<p><a href="/thorordinson/index.htm">ENTER</a></p>
-		
-		</div>
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1 id="color2">NEXUS 5X</h1>
-		<p><a href="/cherryshampoo/index.htm">ENTER</a></p>
-		
-		</div>
-	</div>
-   <div class="section" id="section3">
-		<div class="intro">
-			<h1>GALLERY</h1>
-		<p><a href="gallery.htm">ENTER</a></p>
-		
-		</div>
-	</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <a href="http://cherryshampoo.dothome.co.kr/" target="_blank"><div class="content">
+      <img src="images/nexus5x.jpg" alt="nexus5x" style="width:100%">
+        <h3>NEXUS 5X</h3>
+        <p>I redesigned NEXUS 5X introducing page. Design concept is  dynamic and creative. It will make many consumer buy this product.</p>
+        </div></a>
+  </div>
+ 
+  <div class="column">
+    <a href="http://lemonsoda.dothome.co.kr/" target="_blank"> <div class="content">
+    <img src="images/kuga.png" alt="kuga 2017" style="width:100%">
+        <h3>KUGA 2017</h3>
+            <p>Ford corperation's new KUGA 2017 version introducing page redesign. Consummer feel KUGA is Most Luxuery and Fabulous SUV</p>
+        </div></a>
+  </div>
+   <div class="column">
+   <a href="http://thorordinson.dothome.co.kr/" target="_blank"> <div class="content">
+    <img src="images/aladin.png" alt="aladin" style="width:100%">
+        <h3>ALADIN</h3>
+        <p>One of the Biggest Internet Book Store Aladin redesign. They need Simple and minimal Image. So I designed this more important things.</p>
+       </div></a>
+  </div>
+  <div class="column">
+    <a href="gallery.htm"><div class="content">
+    <img src="images/lalaland.jpg" alt="graphic" style="width:100%">
+      <h3>GRAPHICS</h3>
+      <p>Various Graphic Images Using Photoshop and Illustration programs. It show you my capability and preference.</p>
+        </div></a>
+  </div>
+<!-- END GRID -->
+</div>
+
+    <a href="gallery.htm"><div class="content">
+  <img src="images/puzzle01.jpg" alt="some_other_work" style="width:100%">
+    <h3>Some Other Work</a></h3>
+    <p>MANY PICTURE PUZZLES IT MAKE YOU SO FUNNY</p>
+    </div></a>
+  
+  <footer>
+  <h5>THANKS FOR COMMING HERE AND ENJOY MY PORTPOLIOS!<br>
+      My Name Is Min-jeong Son. I will become promising Web designer. IF YOU CONTACT ME PLEASE CALL MY NUMBER OR SEND THE MAIL.<br> MY CELL PHONE NUMBER IS <span>010-4691-5457</span> AND EMAIL ADDRESS IS <span>m_jr@naver.com</span>  </h5>
+    </footer>
+
+<!-- END MAIN -->
+</div>
     </div>
-    
+
 </body>
 </html>
