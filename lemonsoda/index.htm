@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>kuga 2017</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        
+        #wrap {
+            width: 1001px;
+            margin: 0 auto;
+            background-color: #000;
+            color: #fff;
+            font-family: Verdana;
+        }
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header {
+            height: 1500px;
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: 160px;
+
+        }
+
+        header #navs {
+            height: 110px;
+        }
+
+        header #navs #nav1 {
+            width: 100%;
+            height: 33px;
+            background-color: #191919;
+            position: absolute;
+            top: 29px;
+        }
+
+        header #navs #nav1 ul {
+            overflow: hidden;
+            position: absolute;
+            left: 25px;
+        }
+
+        header #navs #nav1 ul li {
+
+            float: left;
+            padding: 0 20px;
+            border-right: 1px solid #fff;
+        }
+
+        header #navs #nav1 ul li a {
+            line-height: 29px;
+        }
+
+        header #navs #nav1 ul li:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+
+        header #navs img {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        header #navs #nav2 {
+            height: 29px;
+        }
+
+        header #navs #nav2 ul {
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 3px;
+        }
+
+        header #navs #nav2 ul li {
+            float: left;
+            padding-right: 30px;
+        }
+
+        header #navs #nav2 ul li:last-child {
+            padding-right: 10px;
+        }
+
+        header #navs #nav2 ul li a {
+            color: #6f6f6f;
+            font-size: 0.75rem;
+        }
+
+        header #navs #nav3 {
+            height: 48px;
+            position: absolute;
+            right: 0;
+            top: 85px;
+        }
+
+        header #navs #nav3 ul {
+            overflow: hidden;
+        }
+
+        header #navs #nav3 ul li {
+            float: left;
+            padding: 0 15px;
+        }
+
+        header #navs #nav3 ul li:last-child {
+            padding-right: 10px;
+        }
+
+        header #navs #nav3 ul li a {
+            font-size: 0.8rem;
+        }
+
+        header #logo {
+            position: absolute;
+            top: 71px;
+            right: 396px;
+        }
+
+        header #h_img1 {
+            clear: left;
+            border-top: 4px solid #fdd12d;
+            margin-bottom: 105px;
+        }
+
+
+        header h1 {
+
+            margin: 0 auto;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            font-weight: 100;
+            width: 667px;
+            border-width: 5px 0;
+            border-style: solid;
+            border-color: #141414;
+            margin-bottom: 60px;
+        }
+
+        header table {
+
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #fdd12d;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 60px;
+
+        }
+
+        header table td {
+            padding: 20px;
+            color: #e7bf29;
+        }
+
+        header #h_img01 {
+           
+            position:absolute;
+            left:172px;
+            width:472px;
+            height:328px;
+            float:left;}
+            
+             header #h_img02 {
+                    position:absolute;
+                        left:644px;
+                    width:172px;
+                        float:left;
+            }
+            header #h_img03 {
+                 position:absolute;
+                left:644px;
+                bottom:130px;
+                width:172px;
+                float:left;
+                
+            }
+            header #h_img04{
+                 position:absolute;
+                left:644px;
+                bottom:39px;
+                width:172px;
+                float:left;
+            }
+
+        }
+        
+        header #header_imgs {
+            border:10px solid #141414;
+           
+        }
+        
+        header h3 {
+            font-weight: normal;
+        }
+
+        /*--------------메인----------------------------------------*/
+
+        #main #sinc_div {
+            height: 709px;
+            overflow: hidden;
+            position: relative;
+            /*  margin-top: 166px;*/
+        }
+
+        #main #sinc_div #m1 {
+            position: absolute;
+            top: 35px;
+            right: 164px;
+        }
+
+        #main h3 {
+            color: #fdd12d;
+            font-family: sans-serif;
+            font-size: 2rem;
+            font-weight: 100;
+            /*   position: absolute;
+            top: 50px;*/
+        }
+
+
+        #main #sinc_div h3 {
+            position: absolute;
+            top: 26px;
+            left: 270px;
+        }
+
+        #main #sinc_div p {
+            position: absolute;
+            top: 497px;
+            right: 335px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #main #sinc_div #m1 {
+            position: absolute;
+            top: 65px;
+            right: 164px;
+        }
+
+        #main #sinc_div #sinc_img {
+            float: left;
+            margin-bottom: 50px;
+            position: absolute;
+            top: 40px;
+
+        }
+
+        #main span {
+            color: #fdd12d;
+        }
+
+        /*-------------------------------------------------------*/
+
+        #main #a_div {
+            overflow: hidden;
+            position: relative;
+            height: 660px;
+            background-image: url('images/back1.png');
+            background-size: 618px 120px;
+            background-repeat: no-repeat;
+            background-position: 390px 70px;
+        }
+
+        #main #a_div h3 {
+            float: left;
+            position: absolute;
+            right: 181px;
+        }
+
+        #main #a_div #a01 {
+            float: left;
+            position: absolute;
+            left: 69px;
+            top: 125px;
+        }
+
+        #main #a_div #a02 {
+            float: left;
+            position: absolute;
+            right: 0;
+            top: 213px;
+        }
+
+        #main #a_div #sinc_img {
+            float: left;
+            position: absolute;
+            right: -100px;
+            top: 20px;
+        }
+
+        #main #a_div p {
+            float: left;
+            position: absolute;
+            top: 82px;
+            left: 421px;
+        }
+
+        /*-----------------------------------------------*/
+
+        #main #b_div {
+            height: 595px;
+            overflow: hidden;
+            position: relative;
+            background-image: url('images/back1.png');
+            background-repeat: no-repeat;
+            background-position: left 70px;
+            background-size: 660px 140px;
+
+        }
+
+        #main #b_div h3 {
+            float: left;
+            position: absolute;
+            top: 0;
+            right: 252px;
+        }
+
+        #main #b_div p {
+            float: left;
+            margin-top: 91px;
+            margin-left: 69px;
+            z-index: 10;
+        }
+
+        #main #b_div img {
+            float: left;
+            position: absolute;
+            right: 0;
+            top: 184px;
+        }
+
+        #main #b_div #sinc_img {
+            float: left;
+            position: absolute;
+            top: 20px;
+            left: -70px;
+        }
+
+        /*-----------------------------------------------------------*/
+
+        #main #c_div {
+            margin-top: 143px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #main #c_div img {
+            margin-bottom: 218px;
+            float: left;
+        }
+
+        #main #c_div h3 {
+            float: left;
+            position: absolute;
+            right: 200px;
+            top: 0;
+        }
+
+        #main #c_div #sinc_img {
+            float: left;
+            position: absolute;
+            top: 20px;
+            right: -70px;
+        }
+
+        #main #c_div p {
+            text-align: right;
+            margin-top: 63px;
+            float: left;
+            position: absolute;
+            top: 20px;
+            right: 53px;
+        }
+
+        /*---------------------------------------*/
+
+        #main #d_div #sinc_img,
+        #main #d_div h3 {
+            /*        margin-top: 230px;*/
+        }
+
+        #main #d_div #sinc_img {
+            position: absolute;
+            top: 20px;
+        }
+
+        #main #d_div {
+            width: 100%;
+            height: 565px;
+            /*    height: 565px;*/
+            overflow: hidden;
+            position: relative;
+            background-image: url('images/main3_3.png');
+            background-repeat: no-repeat;
+            margin-bottom: 180px;
+        }
+
+        #main #d_div h3 {
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 265px;
+        }
+
+        #main #d_div p {
+            margin-top: 77px;
+            margin-left: 59px;
+        }
+
+        /*----------------------여기서부터 푸터-----------------------------*/
+
+        footer {
+            margin: 0 auto;
+            width: 1001px;
+            height: 842px;
+            color: #656565;
+        }
+
+        footer a {
+            color: #656565;
+        }
+
+        footer #f1_m1
+        {width:363px;
+            height:194px;
+        float:left;}
+         footer #f1_m2
+        {width:334px;
+            height:194px;
+        float:left;}
+         footer #f1_m3
+        {width:300px;
+            height:194px;
+            float:left;
+            
+       }
+        
+
+        footer #f2 {
+            height: 559px;
+            width: 100%;
+            margin-bottom: 52px;
+        }
+
+        footer #nav_footer {
+            width: 100%;
+            height: 32px;
+            background-image: url('images/back_foot.png');
+            /* background-repeat: repeat-x;
+            background-position: bottom left;*/
+            position: relative;
+        }
+
+
+        footer #nav_footer ul {
+            overflow: hidden;
+            position: absolute;
+            right: 40px;
+            bottom: 7px;
+            margin-right: 40px;
+        }
+
+        footer #nav_footer ul li {
+            float: left;
+            padding: 0 5px;
+        }
+
+        footer #nav_footer ul li a {
+            font-size: 0.8rem;
+
+        }
+
+        footer address {
+            padding-left: 10px;
+            font-style: normal;
+            font-size: 0.8rem;
+            position: absolute;
+            left: 0;
+            bottom: 6px;
+            z-index: 5;
+        }
+
+        footer #f3 {
+            position: absolute;
+            right: 0;
+            top: 0px;
+        }
+
+ .row > .column { padding: 0 8px; } .row:after { content: ""; display: table; clear: both; } .column { float: left; width: 25%; } /* The Modal (background) */ .modal { display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: black; } /* Modal Content */ .modal-content { position: relative; background-color: #fefefe; margin: auto; padding: 0; width: 90%; max-width: 1000px; } /* The Close Button */ .close { color: white; position: absolute; top: 10px; right: 25px; font-size: 35px; font-weight: bold; } .close:hover, .close:focus { color: #999; text-decoration: none; cursor: pointer; } .mySlides { display: none; } .cursor { cursor: pointer } /* Next & previous buttons */ .prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -50px; color: white; font-weight: bold; font-size: 20px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none; } /* Position the "next button" to the right */ .next { right: 0; border-radius: 3px 0 0 3px; } /* On hover, add a black background color with a little bit see-through */ .prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8); } /* Number text (1/3 etc) */ .numbertext { color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0; } img { margin-bottom: -4px; } .caption-container { text-align: center; background-color: black; padding: 2px 16px; color: white; } .demo { opacity: 0.6; } .active, .demo:hover { opacity: 1; } img.hover-shadow { transition: 0.3s } .hover-shadow:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) } .popup_overlay {background-color: #000000;} .popup_image {border: 1px solid #999999; background-color: black; margin-right:5px;}
+    </style>
+    
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="navs">
+                <img src="images/point1_03.png" alt="pointer">
+                <div id="nav1">
+
+                    <ul>
+                        <li><a href="#">KUGA</a></li>
+                        <li><a href="#">GALLARY</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="nav2">
+                    <ul>
+                        <li><a href="#">모두보기</a></li>
+                        <li><a href="#">기술</a></li>
+                        <li><a href="#">구매하기</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">회사정보</a></li>
+                    </ul>
+                </div>
+                <div id="nav3">
+                    <ul>
+                        <li><a href="#">브로셔 다운로드</a></li>
+                        <li><a href="#">견적 신청</a></li>
+                        <li><a href="#">시승 신청</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <img id="logo" src="images/logo.png" alt="kuga_logo">
+            <img id="h_img1" src="images/head01.png" alt="main_kuga">
+
+
+            <h1>KUGA IS REVOLUTION OF FORD</h1>
+
+            <h3>
+                <table>
+                    <tr>
+                        <td>모델명</td>
+                        <td>배기량</td>
+                        <td>최대출력연비</td>
+                        <td>출시가</td>
+                    </tr>
+                    <tr>
+                        <td>2.0디젤</td>
+                        <td>1.997cc</td>
+                        <td>180hp 12.4km/l</td>
+                        <td>3.990~4.540만원</td>
+                    </tr>
+                </table>
+            </h3>
+
+<div id="header_imgs">
+           
+           
+<div class="row">
+  <div class="column">
+      <img id="h_img01" src="images/fordm1.jpg" alt="headimg_02"onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></div>
+    <img id="h_img02" src="images/fordm2.jpg" alt="headimg_02"onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+            <img id="h_img03" src="images/fordm3.jpg" alt="headimg_02"onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></div>
+            <img id="h_img04" src="images/fordm4.jpg" alt="headimg_02"onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    
+          <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/fordm1.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/fordm2.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/fordm3.jpg">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/fordm4.jpg" >
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+           
+            
+            
+<!--
+<div class="row">
+  <div class="column">
+    <img src="images/fordm1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/fordm2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/fordm3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/fordm4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/fordm1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/fordm2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/fordm3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/fordm4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>-->
+            
+            
+             </div>
+
+
+        </header>
+        <!------------------------------------------------------------------->
+        <div id="main">
+            <div id="sinc_div">
+
+                <img id="sinc_img" src="images/line1.png" alt="line">
+                <h3>SYNC™3</h3>
+
+                <!--gold line-->
+                <img id="m1" src="images/main1.png" alt="main_img">
+
+                <p><span>싱크(SYNC™3)</span>는 최첨단 음성 명령 인포테인먼트 <br> 시스템으로 KUGA에 탑재되어 어른들은 물론 아이들도<br> 간편히 사용할 수 있습니다.</p>
+
+            </div>
+
+            <div id="a_div">
+                <h3>ACTIVE PARK ASSIST SYSTEM</h3>
+                <img id="sinc_img" src="images/line1.png" alt="line">
+                <!--gold line-->
+                <p><span>액티브 파크 어시스트</span>기능은 까다로운 주차상황에도<br> 손쉽게 문제를해결 해 줍니다.<br> 또한 Kuga는 양손가득짐을 실어야 할 상황에도<br> 운전자를 편히 도와줍니다.</p>
+                <img id="a01" src="images/main2_1.png" alt="main2_1">
+                <img id="a02" src="images/main2_2.png" alt="main2_2">
+
+
+            </div>
+
+            <div id="b_div">
+                <img id="sinc_img" src="images/line1.png" alt="line">
+                <!--gold line-->
+                <h3>ADATED BY-XENON HID HEAD LAMP</h3>
+
+                <p><span>어댑티브 바이-제논 HID헤드램프</span>는 어두운 길에서도 든든한 동반자가 되어주고<br> 오토 헤드램프 컨트롤(Auto Headlamp Control)은<br> 노면 상태 변화를 스스로 감지하여 상황에 맞게 빔 패턴을 조정하고,<br> 코너링시 꺾인 코너를 밝혀시야를 넓혀 줍니다.</p>
+                <img src="images/main3_1.png" alt="main3_1">
+            </div>
+
+            <div id="c_div">
+                <h3>COMFORTABLE INTERIOR</h3>
+                
+                
+               <img src="images/main3_2.png" alt="main3_2">
+                <img id="sinc_img" src="images/line1.png" alt="line">
+                <p>승차자 모두에게 여유로운 공간을 즐길 수 있도록 <br> 갖춰진 <span>인테리어와 센터 콘솔의 길이 조절</span>은 <br> 드라이버에게 더욱 편한 자세를 제공합니다. <br><br><br> 팔걸이 아래에는 스마트폰 휴대를 위한 <br> <span>대형수납 공간</span>이 있으며 <span>운전석과 동반석에 <br> 적용한 열선</span>은 추운 겨울 아침에도 따뜻하게 <br> 출발하실 수 있습니다.<br><br><br> 또한, 10웨이 전동 조절 운전석 시트로 <br> 누구나 손쉽게 자신의 체형에 맞는<br> 최적 운전 자세를 선택하실 수 있습니다.</p>
+            </div>
+
+            <div id="d_div">
+                <img id="sinc_img" src="images/line1.png" alt="line">
+                <h3>EFFICIENT AIRBAG</h3>
+                <p><span>7개의 </span> 모든 승차자를 <br> 보호하기위한 것으로 다양한 <br> 사고에 대해 승차자를 <br> 안전하게 보호해줍니다. </p>
+
+            </div>
+
+        </div>
+        <!------------------------------------------------------------------>
+        <footer>
+           
+            <img id="f1_m1" onmouseover="this.style.cursor='pointer'"
+    alt="" src="images/f1m2p1.jpg"onclick="Control.Modal.openDialog(this, event, 'images/f1m2p1.jpg');"
+    style="cursor: pointer;" />
+        
+        <img id="f1_m2" onmouseover="this.style.cursor='pointer'"
+    alt="" src="images/f1m2p2.jpg"onclick="Control.Modal.openDialog(this, event, 'images/f1m2p2.jpg');"
+    style="cursor: pointer;" />
+    
+    <img id="f1_m3" onmouseover="this.style.cursor='pointer'"
+    alt="" src="images/f1m2p3.jpg"onclick="Control.Modal.openDialog(this, event, 'images/f1m2p3.jpg');"
+    style="cursor: pointer;" />
+            
+            
+            <img id="f2" src="images/footer2.png" alt="footer_main">
+            <div id="nav_footer">
+                <address>Copyright © 2016 Ford Sales &amp; Service Korea Inc.  </address>
+                <ul>
+                    <li><a href="#">사이트 맵</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">글로벌 사이트</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">세일즈 프로모션</a></li>
+                    <li><a href="#">ABOUT FORD</a></li>
+                </ul>
+                <img id="f3" src="images/flogo.png" alt="footer_logo">
+            </div>
+        </footer>
+
+    </div>
+    
+
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script type="text/javascript" src="js/prototype_v1511.js"></script>
+	<script type="text/javascript" src="js/Control.js"></script>
+	<script type="text/javascript" src="js/Control.ImgModal.js"></script>
+</body>
+
+</html>
